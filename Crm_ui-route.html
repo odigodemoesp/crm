@@ -80,7 +80,7 @@
           </li>
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
-            <a ui-sref="profile" class="dropdown-toggle" data-toggle="dropdown">
+            <a ng-click="Odigo.OdigoStartRecord()" href="" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-microphone"></i>              
             </a>            
           </li>
@@ -220,7 +220,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-               <li ng-repeat="Item in Odigo.CrmSelectedContact.Dispositivos">
+            <li ng-repeat="Item in Odigo.CrmSelectedContact.Dispositivos">
               <a ><i class="fa fa-circle-o"></i>{{Item.Dispositivo}}</a>
             </li>
           </ul>
@@ -250,15 +250,19 @@
             </span>
           </a>
         </li>
-        <li>
-          <a href="" ng-if="Odigo.CrmSelectedContact.Id">
-            <i class="fa fa-envelope" ></i> <span>Emails</span>
+        <li class="treeview">
+          <a href="CrmDemoProfile.html#" ng-if="Odigo.CrmSelectedContact.Id">
+            <i class="fa fa-suitcase"></i>
+            <span>Seguros contratados</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+                <small class="label pull-right bg-blue">{{Odigo.CrmSelectedContact.Seguros.length}}</small>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li ng-repeat="Item in Odigo.CrmSelectedContact.Seguros">
+              <a ><i class="fa fa-circle-o"></i>{{Item.Seguro}}</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a ui-sref="codificar" ng-if="Odigo.CrmSelectedContact.Id">

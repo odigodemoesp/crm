@@ -126,6 +126,7 @@ function OdigoApisController($location,OdigoApisService,userUid,appUid,$scope, $
     }     
     if (OdigoApisCtrl.IsValidObject(OdigoApisCtrl.CrmSelectedContact)){
       OdigoApisCtrl.LastSearchSearchId=null;
+      OdigoApisCtrl.OdigoGetInteractionsByCustId(OdigoApisCtrl.CrmSelectedContact.Id);
       $state.go('profile');
     }
     else{
@@ -240,19 +241,22 @@ function OdigoApisController($location,OdigoApisService,userUid,appUid,$scope, $
       });                
   };    
 
-  //OdigoStartRecord  
-  OdigoApisCtrl.OdigoStartRecord = function(Token,Agent){
-    OdigoApisCtrl.OpStatus='';
-      var promise= OdigoApisService.OdigoStartRecord(Token,Agent);
-      promise.then(function (response) {
-          OdigoApisCtrl.OpStatus='200';
-          console.log('Then:',response.data);          
-        })
-        .catch(function (error) {
-          console.log("Error:",error.status);
-          OdigoApisCtrl.OpStatus=error.status;
-      });                
-  };    
+    //ODIGOSTARTRECORD  
+    OdigoApisCtrl.OdigoStartRecord = function(){
+      console.log('>>>OdigoStartRecord()')
+      OdigoApisCtrl.OpStatus='';
+        var promise= OdigoApisService.OdigoStartRecord(OdigoApisCtrl.Token,OdigoApisCtrl.OdigoCallInfo.UserLogin);
+        promise.then(function (response) {
+            OdigoApisCtrl.OpStatus='200';
+            console.log('Then:',response.data);
+            console.log('>>>OdigoStartRecord()')          
+          })
+          .catch(function (error) {
+            console.log("Error:",error.status);
+            OdigoApisCtrl.OpStatus=error.status;
+            console.log('>>>OdigoStartRecord()')
+        });                
+    };  
   
 
   //END WRAPUP
@@ -289,10 +293,6 @@ function OdigoApisController($location,OdigoApisService,userUid,appUid,$scope, $
 //           REASONS OF CONVERSATIONS             ///
 /////////////////////////////////////////////////////    
   OdigoApisCtrl.SetReasonsOfConversation = function(){
-
-        var EmptyObject={};
-        OdigoApisCtrl.CrmSelectedContact=EmptyObject;
-        $state.go('cleared');
 
     console.log('--> SetReasonsOfConversation()');    
     OdigoApisCtrl.ReasonsOfConversation={};

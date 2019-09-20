@@ -2,12 +2,6 @@
   "agents":
   [
       {
-        "Login":"agent176ddi@demo.com",
-        "Name":"Raúl",
-        "LastName":"Ortega Andrés",
-        "Image" : "./images/Roa.jpg"
-      },
-      {
         "Login":"agent175ddi@demo.com",
         "Name":"Tatiana",
         "LastName":"Lloret",
@@ -18,6 +12,12 @@
         "Name":"David",
         "LastName":"Gomez",
         "Image" : "./images/David.png"
-      }          
+      },        
+      {
+        "Login":"agent176ddi@demo.com",
+        "Name":"Beatriz",
+        "LastName":"Soro",
+        "Image" : "./images/Bea.jpg"
+      }  
   ]
 }

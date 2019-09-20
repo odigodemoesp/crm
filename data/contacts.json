@@ -35,11 +35,16 @@
         {"Promo":"HBO 1 año gratis"},
         {"Promo":"Descuento 25% nueva linea"}
       ],
-        "Dispositivos" : [
+      "Dispositivos" : [
         {"Dispositivo":"Televisión"},
         {"Dispositivo":"Móvil"},
         {"Dispositivo":"Tablet"}
-        ]     
+      ],
+      "Seguros" : [
+        {"Seguro":"Coche"},
+        {"Seguro":"Moto"},
+        {"Seguro":"Hogar"}
+      ]     
     },
     {
       "Id":"1617",
