@@ -60,6 +60,14 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       url: '/notfound',
       templateUrl: 'src/templates/notfound.html'
     })    
+    .state('inicioscript', {
+      url: '/inicioscript',
+      templateUrl: 'src/templates/scripts/inicioscript.html'
+    })
+    .state('nodo1', {
+      url: '/nodo1',
+      templateUrl: 'src/templates/scripts/nodo1.html'
+    })
     
     ;    
 }

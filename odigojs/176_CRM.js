@@ -1,7 +1,9 @@
 try {
   console.log('-->> CRMCALL');
-  //var BaseUrl="https://raulnaldo.github.io/crm/Crm_ui-route.html#/profile";
-  var BaseUrl="https://localhost:3000/Crm_ui-route.html#/profile";
+  //var BaseUrl="https://odigodemoesp.github.io/crm/Crm_ui-route.html#/profile";
+  //var BaseUrl="https://localhost:3000/Crm_ui-route.html#/profile";
+
+  var BaseUrl="https://odigodemoesp.github.io/crm/Crm_ui-route.html#/profile";
 
   //OBTENEMOS VALORES DE LA INTERACCION DESDE LA CONSOLA
   console.log(' --> ODIGO DATA()');   

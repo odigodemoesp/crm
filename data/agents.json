@@ -2,19 +2,19 @@
   "agents":
   [
       {
-        "Login":"agent175ddi@demo.com",
-        "Name":"Tatiana",
+        "Login":"agent23@orama.com",
+        "Name":"Mariví Monzón",
         "LastName":"Lloret",
         "Image" : "./images/Tatiana.png"
       },
       {
-        "Login":"agent157ddi@demo.com",
-        "Name":"David",
-        "LastName":"Gomez",
+        "Login":"agent26@orama.com",
+        "Name":"Sebastián",
+        "LastName":"Martinez",
         "Image" : "./images/David.png"
       },        
       {
-        "Login":"agent176ddi@demo.com",
+        "Login":"agent19@orama.com",
         "Name":"Beatriz",
         "LastName":"Soro",
         "Image" : "./images/Bea.jpg"
