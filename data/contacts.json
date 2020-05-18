@@ -23,7 +23,7 @@
         {"Product":"Linea Fibra 100Mb","Serial":"LF100MB","Description":"Linea de fibra residencial calidad de servicio","Price":15},
         {"Product":"Linea movil 699479615","Serial":"LM","Description":"Linea de telefono movil","Price":10},
         {"Product":"Paquete datos 20 Gb","Serial":"DATA20GB","Description":"Paquete de datos mensuales de 20GB","Price":39},
-        {"Product":"Series HBO","Serial":"HB01","Description":"Paquete de series HBO","Price":8}
+        {"Product":"Línea Fijo","Serial":"HB01","Description":"Paquete de líneas (fijo + móvil)","Price":8}
       ],
       "Facturas" : [
         {"Factura":"Julio 68€"},
@@ -32,7 +32,7 @@
         {"Factura":"Octubre 95€"}
       ],
       "Promos" : [
-        {"Promo":"HBO 1 año gratis"},
+        {"Promo":"20% descuento en tu paquete de líneas"},
         {"Promo":"Descuento 25% nueva linea"}
       ],
       "Dispositivos" : [
@@ -78,7 +78,7 @@
         {"Factura":"Octubre 88€"}
       ],
       "Promos" : [
-        {"Promo":"HBO 1 año gratis"},
+        {"Promo":"20% descuento Pack Líneas"},
         {"Promo":"Descuento 25% nueva linea"}
       ],
       "Dispositivos" : [
@@ -109,13 +109,13 @@
         {"Product":"Linea Fibra 200Mb","Serial":"LF200MB","Description":"Linea de fibra simetrica 200MB","Price":35},
         {"Product":"Linea movil 699479615","Serial":"LM","Description":"Linea de telefono movil","Price":10},
         {"Product":"Paquete datos ilimitados","Serial":"DATA-ILIMI","Description":"Paquete de datos ilimitados","Price":40},
-        {"Product":"Futbol total","Serial":"FUT","Description":"Paquete de futbol total","Price":18}
+        {"Product":"Paquete Líneas","Serial":"LM","Description":"Paquete de Líneas (móvil + fijo)","Price":18}
       ],
       "Facturas" : [
         {"Factura":"Octubre 88€"}
       ],
       "Promos" : [
-        {"Promo":"HBO 1 año gratis"},
+        {"Promo":"20% descuento Paquete Líneas"},
         {"Promo":"Descuento 25% nueva linea"}
       ],
       "Dispositivos" : [

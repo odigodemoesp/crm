@@ -5,7 +5,7 @@
         "Login":"agent23@orama.com",
         "Name":"Mariví Monzón",
         "LastName":"Lloret",
-        "Image" : "./images/Tatiana.png"
+        "Image" : "./images/Marivi.png"
       },
       {
         "Login":"agent26@orama.com",
@@ -18,6 +18,12 @@
         "Name":"Beatriz",
         "LastName":"Soro",
         "Image" : "./images/Bea.jpg"
-      }  
+      },
+      {
+        "Login":"agent17@orama.com",
+        "Name":"David",
+        "LastName":"Gómez",
+        "Image" : "./images/David.png"
+      }
   ]
 }
